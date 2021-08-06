@@ -2,8 +2,8 @@ build :
 	hugo
 post : joel
 	hugo new posts/$(POST_NAME).md
-clean : ##make cleand limpiar dist
-	#limpiar 
+clean : ## make cleand limpiar dist
+	# limpiar 
 	rm -rf ./dist/*
 joel : 
 	echo -e "---\ntitle:\"$(POST_TITLE)\"\ndate: {{ .Date }}\ndraft: true\n---">>./archetypes/posts.md
